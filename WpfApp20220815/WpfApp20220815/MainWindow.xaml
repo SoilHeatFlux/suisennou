@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp20220815.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp20220815"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center">
+            <Button Click="Button_Click" Width="100px" HorizontalAlignment="Center" Content="Click Me" Margin="10"/>
+            <Button Click="Create_Directory" Width="100px" HorizontalAlignment="Center" Content="Create_Directorye" Margin="10"/>
+            <TextBox Name="SampleTextBox"  HorizontalAlignment="Center" Text="Sample Text"  Margin="10"/>
+            <TextBlock Name="TextBlock" HorizontalAlignment="Center" Text="TextBlock" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
