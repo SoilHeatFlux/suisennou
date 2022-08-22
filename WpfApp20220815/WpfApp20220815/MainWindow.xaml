@@ -8,10 +8,32 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="White">
         <StackPanel VerticalAlignment="Center">
-            <Button Click="Button_Click" Width="100px" HorizontalAlignment="Center" Content="Click Me" Margin="10"/>
-            <Button Click="Create_Directory" Width="100px" HorizontalAlignment="Center" Content="Create_Directorye" Margin="10"/>
             <TextBox Name="SampleTextBox"  HorizontalAlignment="Center" Text="Sample Text"  Margin="10"/>
-            <TextBlock Name="TextBlock" HorizontalAlignment="Center" Text="TextBlock" Margin="10"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="出力先" Width="97" Margin="10,0,0,10" />
+                <TextBox Name="OutDir" Text="C:\Users\user\Desktop\test"  Margin="10,0,0,10" HorizontalAlignment="Left"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="target Git" Width="97" Margin="10,0,0,10" />
+                <TextBox Name="TargetGit" Text="git url"  Margin="10,0,0,10" TextChanged="TargetGit_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="commit ID after" Width="97" Margin="10,0,0,10" />
+                <TextBox Name="CommitIdAfter" Text="対象コミットID"  Margin="10,0,0,10" HorizontalAlignment="Left"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="commit ID before" Margin="10,0,0,10" />
+                <TextBox Name="CommitIdBefore" Text="対象コミットID"  Margin="10,0,0,10" HorizontalAlignment="Left"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="targetUrlList" Margin="10,0,0,10" Width="100"/>
+                <TextBox Name="target1" Text="対象url"  Margin="10,0,0,10" HorizontalAlignment="Left"/>
+            </StackPanel>
+            <Button Click="Button_Click" Width="100px" HorizontalAlignment="Center" Content="Click Me" Margin="10"/>
         </StackPanel>
+        <StackPanel VerticalAlignment="Center">
+            
+        </StackPanel>
+
     </Grid>
 </Window>
