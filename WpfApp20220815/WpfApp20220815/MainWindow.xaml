@@ -18,6 +18,14 @@
                 <TextBox Name="TargetGit" Text="git url"  Margin="10,0,0,10" TextChanged="TargetGit_TextChanged"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="UserName" Width="97" Margin="10,0,0,10" />
+                <TextBox Name="UserName" Text=""  Margin="10,0,0,10" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Content="Password" Width="97" Margin="10,0,0,10" />
+                <TextBox Name="GitPassword" Text=""  Margin="10,0,0,10" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <Button Content="commit ID after" Width="97" Margin="10,0,0,10" />
                 <TextBox Name="CommitIdAfter" Text="対象コミットID"  Margin="10,0,0,10" HorizontalAlignment="Left"/>
             </StackPanel>
@@ -30,6 +38,7 @@
                 <TextBox Name="target1" Text="対象url"  Margin="10,0,0,10" HorizontalAlignment="Left"/>
             </StackPanel>
             <Button Click="Button_Click" Width="100px" HorizontalAlignment="Center" Content="Click Me" Margin="10"/>
+            <Button Click="Save_Button" Width="100px" HorizontalAlignment="Center" Content="save" Margin="10"/>
         </StackPanel>
         <StackPanel VerticalAlignment="Center">
             
